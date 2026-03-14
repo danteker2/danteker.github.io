@@ -8,11 +8,17 @@
   <h1>Лабораторные работы</h1>
   
   <ul>
-    <li><a href="/main/lab1/lab1_1.html">Лабораторная 1.1</a></li>
-    <li><a href="lab1_2.html">Лабораторная 1.2</a></li>
-    <li><a href="doc.html">Лабораторная 1.3</a></li>
-    <li><a href="lab1_4.html">Лабораторная 1.4</a></li>
-    <li><a href="lab1_5.html">Лабораторная 1.5</a></li>
-  </ul>
+        <li><a href="#" onclick="loadFrame('main/lab1/lab1_1.html')">Лабораторная 1.1</a></li>
+        <li><a href="#" onclick="loadFrame('main/lab1/lab1_2.html')">Лабораторная 1.2</a></li>
+        <li><a href="#" onclick="loadFrame('main/lab1/docs/doc.html')">Лабораторная 1.3</a></li>
+        <li><a href="#" onclick="loadFrame('main/lab1/images/lab1_4.html')">Лабораторная 1.4</a></li>
+        <li><a href="#" onclick="loadFrame('main/lab1/lab1_5.html')">Лабораторная 1.5</a></li>
+    </ul>
+
+    <script>
+        // Функция для загрузки содержимого в iframe
+        function loadFrame(url) {
+            document.getElementById('contentFrame').src = url;
+        }
 </body>
 </html>
