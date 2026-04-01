@@ -24,28 +24,34 @@
 		внедрённой HTML-страницы для отображения на текущей странице. Значение атрибута <span
 			class="attribute">src</span> может быть URL относительно страницы, где появляется элемент <span
 			class="tag">&lt;iframe&gt;</span> или абсолютным адресом для исключительно внешней страницы.</p>
-	<p>Многие страницы используют элемент <span class="tag">&lt;iframe&gt;</span> для внедрения медиа-контента на
-		страницу с внешнего сайта, вроде Google Maps, YouTube и др.</p>
+	<p>Многие страницы используют элемент <span class="tag">&lt;iframe&gt;</span> для внедрения медиа-контента на страницу с внешнего сайта, вроде Google Maps, YouTube и др.</p>
 
 	<h2>Демонстрация добавления встроенного фрейма</h2>
-	<iframe src="https://vk.com/video_ext.php?oid=-61124346&id=456239408&hash=321524a8c586bcb4" width="640" height="360" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
-	<figcaption>Обычный детский праздник в Японии</figcaption>
-	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3103.484371368802!2d114.14902338565517!3d22.32772357126028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040171090077c9%3A0xd5485659d5e1cedc!2sTOWNPLACE%20WEST%20KOWLOON!5e0!3m2!1sru!2sru!4v1774986144070!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-	<figcaption>Памятник борцам за власть Советов на Дальнем Востоке</figcaption>
-
+		<figure>
+			<iframe src="https://vk.com/video_ext.php?oid=-61124346&id=456239408&hash=321524a8c586bcb4" width="640" height="360" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+			<figcaption>Обычный аниматор для детей в Японии</figcaption>
+		</figure>
+		<figure>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3103.484371368802!2d114.14902338565517!3d22.32772357126028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040171090077c9%3A0xd5485659d5e1cedc!2sTOWNPLACE%20WEST%20KOWLOON!5e0!3m2!1sru!2sru!4v1774986144070!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<figcaption>TOWNPLACE WEST KOWLOON</figcaption>
+		</figure>
+	
 	<h2>Демонстрация добавления на страницу видео</h2>
-	<!-- 
-1. Скачайте видеоролик https://fedyaevys.ru/html&css/lab2/oreluniver.mp4
-2. С помощью элемента video добавьте на страницу  видеоплеер с элементами управления, который воспроизводит скачанное видео.
-3. Добавьте к видео обложку (последний кадр видео).
- -->
-
+		<video 
+    	    src="oreluniver.mp4" 
+    	    controls 
+    	    poster="poster.png"
+    	    width="640" 
+    	    height="480">
+    	    Ваш браузер не поддерживает видео.
+    	</video>
+	
 	<h2>Демонстрация добавления на страницу аудио</h2>
-	<!-- 
- 1. Скачайте аудиофайлы https://fedyaevys.ru/html&css/lab2/yuriy-gagarin-poehali.mp3 и https://fedyaevys.ru/html&css/lab2/yuriy-gagarin-poehali.ogg
- 2. С помощью элемента audio добавьте на страницу  аудиоплеер с элементами управления, который воспроизводит скачанные аудио
- 3. Используйте тег <source> для добавления нескольких форматов одного и того же файла на случай, если какой-то из них не будет поддерживаться браузером
-  -->
+		<audio controls>
+    	    <source src="yuriy-gagarin-poehali.mp3" type="audio/mpeg">
+    	    <source src="yuriy-gagarin-poehali.ogg" type="audio/ogg">
+    	    Ваш браузер не поддерживает аудио.
+    	</audio>
 
 </body>
 

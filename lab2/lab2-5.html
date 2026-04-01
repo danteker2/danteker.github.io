@@ -4,10 +4,83 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Форма</title>
-</head>
 <body>
- <form>
-
- </form>
+    <h1>Форма регистрации пользователя</h1>
+    <form method="post">
+        <table>
+            <tr>
+                <td><label>E-mail</label></td>
+                <td><input type="email" placeholder="Введите e-mail" required></td>
+            </tr>
+            <tr>
+                <td><label>Пароль</label></td>
+                <td><input type="password" placeholder="Введите пароль" required></td>
+            </tr>
+            <tr>
+                <td><label>Пол</label></td>
+                <td>
+                    <label><input type="radio" name="g" checked> Мужчина</label>
+                    <label><input type="radio" name="g"> Женщина</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Год рождения</label></td>
+                <td>
+                    <select>
+                        <option>1981</option>
+                        <option>1982</option>
+                        <option>1983</option>
+                        <option>1984</option>
+                        <option>1985</option>
+                        <option>1986</option>
+                        <option>1987</option>
+                        <option>1988</option>
+                        <option>1989</option>
+                        <option>1990</option>
+                        <option>1991</option>
+                        <option>1992</option>
+                        <option>1993</option>
+                        <option>1994</option>
+                        <option>1995</option>
+                        <option>1996</option>
+                        <option>1997</option>
+                        <option>1998</option>
+                        <option>1999</option>
+                        <option>2000</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option>2003</option>
+                        <option>2004</option>
+                        <option>2005</option>
+                        <option>2006</option>
+                        <option>2007</option>
+                        <option>2008</option>
+                    </select>
+                    -й
+                </td>
+            </tr>
+            <tr>
+                <td><label>Я знаю</label></td>
+                <td>
+                    <label><input type="checkbox" checked disabled> Русский</label><br>
+                    <label><input type="checkbox"> Испанский</label><br>
+                    <label><input type="checkbox"> Немецкий</label><br>
+                    <label><input type="checkbox"> Английский</label><br>
+                    <label><input type="checkbox"> Китайский</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Обо мне</label></td>
+                <td><textarea placeholder="Напишите коротко о себе" rows="5" cols="40"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Готово">
+                    <input type="reset" value="Очистить">
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
