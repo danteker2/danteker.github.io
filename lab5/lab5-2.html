@@ -1,27 +1,28 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Columns</title>
     <style>
-       .wrapper {
-            display: grid;
-            grid-template-columns: 20% 200px 1fr 200px 20%;
-            gap: 10px;
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+	        justify-content: center;
+	        gap: 10px;
         }
 
         #left {
-            grid-column: 2;
+		    flex-basis: 200px;
             background: #ccf;
         }
 
         #center {
-            grid-column: 3;
+ 	        flex-basis: 600px;
             background: #cfc;
         }
 
         #right {
-            grid-column: 4;
+  		    flex-basis: 200px;
             background: #fcc;
         }
     </style>
