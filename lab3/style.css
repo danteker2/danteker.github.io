@@ -1,0 +1,60 @@
+/*@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'); Подключаем классический CSS Reset */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-reboot.min.css'); /* Подключаем Bootstrap Reboot */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+body {
+	background-color: #161616;
+	background-image: url('pattern-wicker-geometry-2.png');
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: auto; 
+
+	color: #FFF6E8;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	margin: 0;
+}
+
+.wrapper {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+h1, h2 {
+	text-align: right;
+	color: #F65E49;
+	font-family: 'Roboto', sans-serif;
+	margin-top: 0;
+}
+
+p {
+	text-align: right;
+}
+
+em {
+	color: rgba(246, 94, 73, 0.85);
+	font-style: italic;
+}
+
+strong {
+	font-family: 'Caveat', cursive;
+	font-size: 1.4rem;
+	color: #F65E49;
+}
+
+article {
+	border: 2px solid rgba(246, 94, 73, 0.4);
+	border-radius: 16px;
+	padding: 2rem 2.5rem;
+	margin: 2rem 0;
+	background-color: rgba(22, 22, 22, 0.88);
+}
+
+hr {
+	border: none;
+	border-top: 1px solid rgba(246, 94, 73, 0.3);
+	margin: 2rem 0;
+}
