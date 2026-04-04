@@ -1,70 +1,67 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<title>Menu-2</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-	<style>
-		html {
-			background: #f0f0f0;
-		}
-		
-		.menu {
-			width: 200px;
-			background: #fff;
-			padding: 10px;
-		}
-		
-		.menu ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-		}
-		
-		.menu li {
-			margin: 5px 0;
-		}
-		
-		.menu li a {
-			text-decoration: underline;
-			color: #0066cc;
-			font-size: 14px;
-			display: inline-block;
-		}
-		
-		.menu li a:hover {
-			color: #cc0000;
-		}
-		
-		.menu li ul {
-			margin-left: 20px;
-			display: none;
-		}
-		
-		.menu li:hover > ul {
-			display: block;
-		}
-		
-		.menu > ul > li > a::before {
-			font-family: "Font Awesome 6 Free";
-			font-weight: 900;
-			content: "\f0fe";
-			margin-right: 5px;
-			color: #333;
-		}
-		
-		.menu > ul > li:hover > a::before {
-			content: "\f146";
-		}
-		
-		.menu > ul > li > ul > li > a::before {
-			font-family: "Font Awesome 6 Free";
-			font-weight: 400;
-			content: "\f192";
-			margin-right: 5px;
-			color: #666;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <title>Menu-2</title>
+    <style>
+        html {
+            background: #f0f0f0;
+        }
+        .menu {
+            width: 200px;
+            background: #fff;
+            padding: 10px;
+        }
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li {
+            margin: 5px 0;
+        }
+        .menu li a {
+            color: #0066cc;
+            font-size: 14px;
+            display: inline-block;
+        }
+        .menu li a:hover {
+            color: #cc0000;
+        }
+
+        .menu li a::before,
+        .menu li li a::before {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-image: url('css_sprites.png');
+            background-repeat: no-repeat;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+
+        .menu > ul > li > a::before {
+             background-position: -48px -8px; 	/* плюс */
+        }
+
+        .menu > ul > li > a:hover::before {
+             background-position: -13px -8px; 	/* минус*/
+        }
+
+        .menu li li a::before {
+             background-position: -13px -44px;	 /* точка */
+        }
+
+        .menu li ul {
+            margin-left: 20px;
+            display: none;
+        }
+
+        .menu li:hover > ul {
+            display: block;
+        }
+    </style>
 </head>
 <body>
 	<nav class="menu">
